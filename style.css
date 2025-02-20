@@ -9,7 +9,7 @@
 }
 
 header{
-    background-color: rgb(41, 72, 158);
+    background-color: #141414;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -31,9 +31,55 @@ header{
     color: aliceblue;
     padding: 10px;
     font-weight: 500;
+    transition: color 0.5s ease;
 }
 
 .navigation a:hover{
-    background-color: rgb(38, 65, 139);
-    border-radius: 20px;
+    color: rgb(253, 19, 19);
 }
+
+section{
+    padding: 0px 500px 0px 200px;
+    font-size: 1.6em;
+    background-color: black;
+    color: aliceblue;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section span{
+    color: rgb(253, 19, 19);
+}
+
+.intro span{
+    font-weight: 650;
+}
+
+.social-info a{
+    color: aliceblue;
+    font-size: 1.3em;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+.social-info a:hover{
+    color: rgb(253, 19, 19);
+}
+
+.social-info .CV-btn { 
+    text-decoration: none;
+    font-size: 0.7em;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 25px;
+    font-weight: 600;
+}  
+
