@@ -39,13 +39,13 @@ header{
 }
 
 section{
-    padding: 0px 500px 0px 200px;
-    font-size: 1.6em;
+    padding: 80px 500px 0px 200px;
     background-color: black;
     color: aliceblue;
 }
 
 .main{
+    font-size: 1.6em;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -67,7 +67,7 @@ section span{
     color: aliceblue;
     font-size: 1.3em;
     padding: 10px;
-    transition: 0.5s ease;
+    transition: color 0.5s ease;
 }
 
 .social-info a:hover{
@@ -82,4 +82,23 @@ section span{
     border-radius: 25px;
     font-weight: 600;
 }  
+
+.edu{
+    font-size: 1.2em;
+    padding: 40px;
+    background-color: #141414;
+    border-style: solid;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+.edu:hover{
+    border-color: rgb(253, 19, 19);
+    transform: scale(1.02);
+}
+
+.edu-info{
+    display: flex;
+    justify-content: space-between;
+}
 
