@@ -45,6 +45,9 @@ section{
 }
 
 .main{
+    padding: 80px 500px 0px 200px;
+    background-color: black;
+    color: aliceblue;
     font-size: 1.6em;
     width: 100%;
     min-height: 100vh;
@@ -55,7 +58,7 @@ section{
     background-attachment: fixed;
 }
 
-section span{
+main span{
     color: rgb(253, 19, 19);
 }
 
@@ -83,7 +86,7 @@ section span{
     font-weight: 600;
 }  
 
-.edu{
+.info{
     font-size: 1.2em;
     padding: 40px;
     background-color: #141414;
@@ -92,13 +95,53 @@ section span{
     transition: 0.5s ease;
 }
 
-.edu:hover{
+.info:hover{
     border-color: rgb(253, 19, 19);
     transform: scale(1.02);
 }
 
-.edu-info{
+.info-details{
     display: flex;
     justify-content: space-between;
 }
 
+.info span{
+    color: rgb(253, 19, 19);
+}
+
+.info h1{
+    text-decoration: underline;
+}
+
+.container{
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-container{
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+img{
+    width: 100%;
+}
+
+@keyframes slide {  
+    0%, 20% {  
+        transform: translateX(0);  
+    }  
+    25%, 45% {  
+        transform: translateX(-100%);  
+    }  
+    50%, 70% {  
+        transform: translateX(-200%);  
+    }  
+    75%, 95% {  
+        transform: translateX(-300%);  
+    }  
+    100% {  
+        transform: translateX(0);
+    }  
+} 
