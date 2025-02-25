@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+body {  
+    background-color: black;
+    color: white;
+}
+
 header{
     background-color: #141414;
     width: 100%;
@@ -40,14 +45,10 @@ header{
 
 section{
     padding: 100px 500px 0px 200px;
-    background-color: black;
-    color: aliceblue;
 }
 
 .main{
     padding: 80px 500px 0px 200px;
-    background-color: black;
-    color: aliceblue;
     font-size: 1.6em;
     width: 100%;
     min-height: 100vh;
@@ -56,6 +57,7 @@ section{
     background: url(images/background.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    border-radius: 0px 0px 50px 50px;
 }
 
 main span{
@@ -67,6 +69,7 @@ main span{
 }
 
 .social-info a{
+    text-decoration: none;
     color: aliceblue;
     font-size: 1.3em;
     padding: 10px;
@@ -87,6 +90,7 @@ main span{
 }  
 
 .info{
+    width: 130%;
     font-size: 1.2em;
     padding: 40px;
     background-color: #141414;
@@ -121,7 +125,7 @@ main span{
 
 .img-container{
     display: flex;
-    animation: slide 20s infinite;
+    animation: slide 40s infinite;
 }
 
 img{
@@ -129,19 +133,48 @@ img{
 }
 
 @keyframes slide {  
-    0%, 20% {  
+    0%, 10% {  
         transform: translateX(0);  
     }  
-    25%, 45% {  
+    15%, 25% {  
         transform: translateX(-100%);  
     }  
-    50%, 70% {  
+    30%, 40% {  
         transform: translateX(-200%);  
     }  
-    75%, 95% {  
+    45%, 50% {  
         transform: translateX(-300%);  
     }  
-    100% {  
+    50%, 55% {  
+        transform: translateX(-300%);
+    }
+    60%, 70% {  
+        transform: translateX(-200%);
+    }
+    75%, 85% {  
+        transform: translateX(-100%);
+    }
+    90%, 100% {  
         transform: translateX(0);
-    }  
-} 
+    }
+}
+
+footer{
+    padding-top: 100px;
+}
+
+.contact{
+    font-size: 1.2em;
+    padding: 50px;
+    background-color: #141414;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.location{
+    width: 30%;
+    padding: 30px;
+    border: 1px #ffffff solid;
+    border-radius: 20px;
+    background-color: #1d1d1d;
+    margin-left: 150px;
+}
