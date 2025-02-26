@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {  
@@ -25,21 +24,23 @@ header{
 }
 
 .logo{
-    text-decoration: none;
     color: aliceblue;
     font-weight: 700;
     font-size: 1.8em;
 }
 
-.navigation a{
-    text-decoration: none;
+.navigation button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
     color: aliceblue;
     padding: 10px;
     font-weight: 500;
     transition: color 0.5s ease;
 }
 
-.navigation a:hover{
+.navigation button:hover{
     color: rgb(253, 19, 19);
 }
 

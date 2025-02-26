@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="JavaScript" href="nav.js">
     <link rel="icon" type="image/jpg" href="images/favicon.JPEG.png">
     <title>Basem Ghasan</title>
  </head>
  <body>
     <header>
-        <a href="index.html" class="logo">BASEM.</a>
+        <h1 class="logo">BASEM.</h1>
         <nav class="navigation">
-            <a href="#education">Education</a>
-            <a href="#experience">Relevant Experience</a>
-            <a href="#skills">Technical Skills</a>
-            <a href="#contact">Contact</a>
+            <button onclick="navigateTo('education')">Education</button>  
+            <button onclick="navigateTo('experience')">Relevant Experience</button>  
+            <button onclick="navigateTo('skills')">Technical Skills</button>  
+            <button onclick="navigateTo('contact')">Contact</button>  
         </nav>
     </header>
 
@@ -111,5 +112,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>  
  </body>
  </html>
