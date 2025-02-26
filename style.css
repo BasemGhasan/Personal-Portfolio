@@ -44,11 +44,13 @@ header{
 }
 
 section{
-    padding: 100px 500px 0px 200px;
+    padding-top: 100px;
+    width: 60%;
+    margin: 0% 10% 0% 10%;
 }
 
 .main{
-    padding: 80px 500px 0px 200px;
+    padding: 10% 25% 0 10%;
     font-size: 1.6em;
     width: 100%;
     min-height: 100vh;
@@ -167,14 +169,77 @@ footer{
     font-size: 1.2em;
     padding: 50px;
     background-color: #141414;
+    border-top: 1px #ffffff solid;
     border-radius: 50px 50px 0px 0px;
 }
 
 .location{
-    width: 30%;
+    min-width: 35%;
     padding: 30px;
     border: 1px #ffffff solid;
     border-radius: 20px;
     background-color: #1d1d1d;
-    margin-left: 150px;
+    margin-left: 15%;
+}
+
+@media (max-width: 1023px) {  
+    header{
+        display: none;
+    }
+
+    .navigation {  
+        display: flex;
+        padding: 10px;
+    }  
+
+    .main { 
+        padding-right: 10%;
+        font-size: 1.2em; 
+    }  
+
+    footer{
+        font-size: 0.8em;
+    }
+
+    .contact {  
+        padding: 20px 15px;
+    } 
+
+    .location {
+        min-width: 20%;
+        max-width: 280px;
+        padding: 15px;
+        margin: 25px 0px; 
+    }  
+
+    .info {  
+
+        padding: 20px; 
+    } 
+
+    body {  
+        font-size: 0.9em;   
+    }  
+
+    .social-info a {  
+        font-size: 1em; 
+    }  
+
+    .info p {  
+        font-size: 0.8em; 
+    }
+
+    .info h3 {  
+        font-size: 0.9em; 
+        padding: 5PX 0PX;
+    }
+
+    .info-details{
+        flex-direction: column; 
+    }
+
+    .contact a{
+        padding: 1.8px;
+        font-size: 0.95em;
+    }
 }
